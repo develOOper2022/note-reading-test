@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    background: white url('../img/Layer6.png');
+    /* padding-top: 150px; */
+}
+
+.logo {
+    text-align: left;
+    vertical-align: middle;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #314089;
+    height: 116px;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #F7F4F3;
+    height: 1500px;
+}
+
+.stave {
+    position: relative;
+}
+
+.line {
+    border-bottom: 2px solid black;
+    margin-top: 28px;
+}
+
+.bottom-extra-line {
+    border-bottom: 2px solid black;
+    margin-top: 28px;
+    width: 54px;
+    margin-left: 150px;
+}
+
+.trebeClef {
+    display: block;
+    position: absolute;
+    top: -53px;
+    left: 10px;
+    width: 100px;
+}
+
+.whole-note {
+    display: none;
+    position: absolute;
+    width: 48px;
+}
+
+.note-C {
+    display: block;
+    top: 136px;
+    left: 153px;
+}
+
+.note-D {
+    display: block;
+    top: 122px;
+    left: 153px;
+}
+
+.note-E {
+    display: block;
+    top: 107px;
+    left: 153px;
+}
+
+.note-F {
+    display: block;
+    top: 92px;
+    left: 153px;
+}
+
+.note-G {
+    display: block;
+    top: 77px;
+    left: 153px;
+}
+
+.note-A {
+    display: block;
+    top: 62px;
+    left: 153px;
+}
+
+.note-B {
+    display: block;
+    top: 47px;
+    left: 153px;
+}
+
+.btn-wrapper {
+    margin-top: 40px;
+    display: flex;
+}
+
+.button {
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 0%;
+    border: 2px solid #EAF8FF;
+    width: 90px;
+    height: 40px;
+    font-weight: 700;
+    color: #EAF8FF;
+    background-color: #03379E;
+    
+}
+
+.answer {
+    font-weight: 700;
+    margin-top: 40px;
+    display: none;
+    width: 120px;
+    text-align: center;
+}
+
+.correct {
+    border: 2px solid green;
+    display: block;
+}
+
+.incorrect {
+    border: 2px solid red;
+    display: block
+}
