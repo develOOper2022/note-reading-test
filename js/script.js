@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', function() {
     let showNoteBtn = document.querySelector('.show-note-btn');
     let notesClasses = ['note-C','note-D','note-E','note-F','note-G','note-A','note-B'];
     let answerNoteBtn = document.querySelectorAll('.answer-note-btn');
-    let musicalNotes = ['До', 'Ре', 'Ми', 'Фа', 'Соль', 'Ля', 'Си'];
+    let musicalNotes = ['До', 'Ре', 'Мі', 'Фа', 'Соль', 'Ля', 'Сі'];
     let index;
     let answerBox = document.querySelector('.answer');
 

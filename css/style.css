@@ -5,105 +5,115 @@
 
 section {
     background: white url('../img/Layer6.png');
-    /* padding-top: 150px; */
+}
+
+
+.logo-wrapper {
+    padding-left: 50px;
+    background-color: #314089;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-    text-align: left;
-    vertical-align: middle;
-    font-size: 40px;
+    font-size: 22px;
     font-weight: 700;
     color: #FFFFFF;
-    background-color: #314089;
-    height: 116px;
 }
 
 .container {
     max-width: 950px;
     margin: 0 auto;
     background-color: #F7F4F3;
-    height: 1500px;
+    height: 600px;
 }
 
 .stave {
     position: relative;
+    padding-top: 5px;
 }
 
 .line {
     border-bottom: 2px solid black;
-    margin-top: 28px;
+    
+    height: 18px;
 }
 
-.bottom-extra-line {
-    border-bottom: 2px solid black;
-    margin-top: 28px;
-    width: 54px;
-    margin-left: 150px;
+.line:not(.extra-line, :nth-child(6)) {
+    border-left: 4px solid black;
+}
+
+.extra-line {
+    width: 33px;
+    margin-left: 70px;
+    opacity: 0;
 }
 
 .trebeClef {
     display: block;
     position: absolute;
-    top: -53px;
+    top: 102px;
     left: 10px;
-    width: 100px;
+    width: 47px;
 }
 
 .whole-note {
     display: none;
     position: absolute;
-    width: 48px;
+    height: 18px;
 }
 
 .note-C {
     display: block;
-    top: 136px;
-    left: 153px;
+    top: 193px;
+    left: 71px;
 }
 
 .note-D {
     display: block;
-    top: 122px;
-    left: 153px;
+    top: 184px;
+    left: 71px;
 }
 
 .note-E {
     display: block;
-    top: 107px;
-    left: 153px;
+    top: 175px;
+    left: 71px;
 }
 
 .note-F {
     display: block;
-    top: 92px;
-    left: 153px;
+    top: 166px;
+    left: 71px;
 }
 
 .note-G {
     display: block;
-    top: 77px;
-    left: 153px;
+    top: 157px;
+    left: 71px;
 }
 
 .note-A {
     display: block;
-    top: 62px;
-    left: 153px;
+    top: 148px;
+    left: 71px;
 }
 
 .note-B {
     display: block;
-    top: 47px;
-    left: 153px;
+    top: 139px;
+    left: 71px;
 }
 
 .btn-wrapper {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
+    justify-content: space-around;
 }
 
 .button {
-    margin-right: 20px;
+    margin: 0 10px 0 10px;
     cursor: pointer;
     border-radius: 0%;
     border: 2px solid #EAF8FF;
@@ -112,7 +122,6 @@ section {
     font-weight: 700;
     color: #EAF8FF;
     background-color: #03379E;
-    
 }
 
 .answer {
@@ -129,6 +138,6 @@ section {
 }
 
 .incorrect {
-    border: 2px solid red;
+    border: 2px solid #FF0000;
     display: block
 }
