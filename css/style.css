@@ -7,7 +7,6 @@ section {
     background: white url('../img/Layer6.png');
 }
 
-
 .logo-wrapper {
     padding-left: 50px;
     background-color: #314089;
@@ -47,13 +46,21 @@ section {
 .extra-line {
     width: 33px;
     margin-left: 70px;
-    opacity: 0;
+    opacity: 1;
 }
 
-.trebeClef {
+.trebleClef {
     display: block;
     position: absolute;
     top: 102px;
+    left: 10px;
+    width: 47px;
+}
+
+.bassClef {
+    display: none;
+    position: absolute;
+    top: 113px;
     left: 10px;
     width: 47px;
 }
@@ -62,48 +69,195 @@ section {
     display: none;
     position: absolute;
     height: 18px;
+    left: 71px;
 }
 
-.note-C {
+.show-content {
     display: block;
+}
+
+.hide-content {
+    display: none;
+}
+
+/* first octave */
+
+.note-C-first {
     top: 193px;
-    left: 71px;
 }
 
-.note-D {
-    display: block;
+.note-D-first {
     top: 184px;
-    left: 71px;
 }
 
-.note-E {
-    display: block;
+.note-E-first {
     top: 175px;
-    left: 71px;
 }
 
-.note-F {
-    display: block;
+.note-F-first {
     top: 166px;
-    left: 71px;
 }
 
-.note-G {
-    display: block;
+.note-G-first {
     top: 157px;
-    left: 71px;
 }
 
-.note-A {
-    display: block;
+.note-A-first {
     top: 148px;
-    left: 71px;
 }
 
-.note-B {
-    display: block;
+.note-B-first {
     top: 139px;
-    left: 71px;
+}
+
+/* second octave */
+
+.note-C-second {
+    top: 130px;
+}
+
+.note-D-second {
+    top: 121px;
+}
+
+.note-E-second {
+    top: 112px;
+}
+
+.note-F-second {
+    top: 103px;
+}
+
+.note-G-second {
+    top: 94px;
+}
+
+.note-A-second {
+    top: 85px;
+}
+
+.note-B-second {
+    top: 76px;
+}
+
+/* third octave */
+
+.note-C-third {
+    top: 67px;
+}
+
+.note-D-third {
+    top: 58px;
+}
+
+.note-E-third {
+    top: 49px;
+}
+
+.note-F-third {
+    top: 40px;
+}
+
+.note-G-third {
+    top: 31px;
+}
+
+.note-A-third {
+    top: 22px;
+}
+
+.note-B-third {
+    top: 13px;
+}
+
+/* small octave */
+
+.note-C-small {
+    top: 148px;
+}
+
+.note-D-small {
+    top: 139px;
+}
+
+.note-E-small {
+    top: 130px;
+}
+
+.note-F-small {
+    top: 121px;
+}
+
+.note-G-small {
+    top: 112px;
+}
+
+.note-A-small {
+    top: 103px;
+}
+
+.note-B-small {
+    top: 94px;
+}
+
+/* great octave */
+
+.note-C-great {
+    top: 211px;
+}
+
+.note-D-great {
+    top: 202px;
+}
+
+.note-E-great {
+    top: 193px;
+}
+
+.note-F-great {
+    top: 184px;
+}
+
+.note-G-great {
+    top: 175px;
+}
+
+.note-A-great {
+    top: 166px;
+}
+
+.note-B-great {
+    top: 157px;
+}
+
+/* contra octave */
+
+.note-C-contra {
+    top: 274px;
+}
+
+.note-D-contra {
+    top: 265px;
+}
+
+.note-E-contra {
+    top: 256px;
+}
+
+.note-F-contra {
+    top: 247px;
+}
+
+.note-G-contra {
+    top: 238px;
+}
+
+.note-A-contra {
+    top: 229px;
+}
+
+.note-B-contra {
+    top: 220px;
 }
 
 .btn-wrapper {
