@@ -39,10 +39,24 @@ window.addEventListener('DOMContentLoaded', function() {
         arr.splice(index, 1);
     }
 
+    function showExtraLine(a,b) {
+        for (let i = a; i < b; i++) {
+            extraLines[i].classList.add('show-extra-line');
+        }
+    }
+
+    function hideExtraLine() {
+        extraLines.forEach(item => {
+            item.classList.remove('show-extra-line');
+        });
+    }
+
     showNoteBtn.addEventListener('click', function() {
+        hideExtraLine();
         clefIndex = generateIndex(musicalClef);
         octaveIndex = generateIndex(musicalOctaves);
         noteIndex = generateIndex(musicalNotes);
+        let randomNote = notesClasses[clefIndex][octaveIndex][noteIndex];
 
         if (clefIndex == 0) {
             bassClef.classList.remove('show-content');
@@ -57,9 +71,34 @@ window.addEventListener('DOMContentLoaded', function() {
         }
 
         wholeNote.className = '';
-        wholeNote.classList.add('whole-note', 'show-content', notesClasses[clefIndex][octaveIndex][noteIndex]);
+        wholeNote.classList.add('whole-note', 'show-content', randomNote);
         answerBox.classList.remove('correct','incorrect');
         answerBox.innerHTML = '';
+
+        if (randomNote == notesClasses[0][0][0]) {
+            showExtraLine(5,6);
+        } else if (randomNote == notesClasses[0][1][5] || randomNote == notesClasses[0][1][6]) {
+            showExtraLine(4,5);
+        } else if (randomNote == notesClasses[0][2][0] || randomNote == notesClasses[0][2][1]) {
+            showExtraLine(3,5);
+        } else if (randomNote == notesClasses[0][2][2] || randomNote == notesClasses[0][2][3]) {
+            showExtraLine(2,5);
+        } else if (randomNote == notesClasses[0][2][4] || randomNote == notesClasses[0][2][5]) {
+            showExtraLine(1,5);
+        } else if (randomNote == notesClasses[0][2][6]) {
+            showExtraLine(0,5);
+        } else if (randomNote == notesClasses[1][1][1] || randomNote == notesClasses[1][1][2]) {
+            showExtraLine(5,6);
+        } else if (randomNote == notesClasses[1][1][0] || randomNote == notesClasses[1][2][6]) {
+            showExtraLine(5,7);
+        } else if (randomNote == notesClasses[1][2][4] || randomNote == notesClasses[1][2][5]) {
+            showExtraLine(5,8);
+        } else if (randomNote == notesClasses[1][2][2] || randomNote == notesClasses[1][2][3]) {
+            showExtraLine(5,9);
+        } else if (randomNote == notesClasses[1][2][0] || randomNote == notesClasses[1][2][1]) {
+            showExtraLine(5,10);
+        }
+
 
         let noteNames = musicalNotes.slice();
         let answerArr = [];
@@ -87,6 +126,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     item.innerHTML = '';
                 });
                 wholeNote.classList.remove('show-content', ...notesClasses[clefIndex][octaveIndex]);
+                hideExtraLine();
             } else {
                 answerBox.innerHTML = 'Неправильно';
                 answerBox.classList.add('incorrect');
